@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+  </head>
+  <body ng-app="">
+      <div class="display">
+        <div class= "logo">
+          logo here
+        </div>
+        <div class="lastGame">
+          last game score
+        </div>
+        <div class="nextGame">
+          next game
+        </div>
+      </div>
+          <select id="sport" name="sport" required="true" ng-model="sport">
+            <option></option>
+            <option>Basketball</option>
+            <option>Football</option>
+            <option>Hockey</option>
+            <option>Baseball</option>
+          </select>
+          <select id="team" name="team" required="true" ng-model="team"><option>Bulls</option></select>
+<p ng-bind ="sport"></p>
+<p ng-bind="team"></p>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+  </body>
+  </html>
